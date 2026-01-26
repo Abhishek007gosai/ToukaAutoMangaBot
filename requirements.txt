@@ -1,0 +1,14 @@
+kurigram
+motor
+dnspython
+python-dotenv
+beautifulsoup4
+cloudscraper
+requests
+loguru
+aiohttp
+aiofiles
+pypdf
+Pillow
+apscheduler
+

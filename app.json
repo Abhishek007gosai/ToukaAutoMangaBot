@@ -1,0 +1,51 @@
+{
+  "name": "Chapter Pilot Bot",
+  "description": "Telegram bot for automatic manga chapter tracking and downloads",
+  "repository": "https://github.com/KunalG932/auto-manga-chapter-update-bot.git",
+  "keywords": [
+    "telegram",
+    "bot",
+    "manga",
+    "chapter",
+    "tracker"
+  ],
+  "stack": "heroku-22",
+  "env": {
+    "API_ID": {
+      "description": "Telegram API ID from my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API Hash from my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Bot token from @BotFather",
+      "required": true
+    },
+    "MONGO_DB_URI": {
+      "description": "MongoDB connection URI",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram user ID",
+      "required": true
+    },
+    "LOG_GROUP": {
+      "description": "Telegram group/channel ID for logs (optional)",
+      "required": false,
+      "value": "0"
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
