@@ -8,8 +8,8 @@ load_dotenv()
 class Config:
     API_ID = 23537462
     API_HASH = "c9599a5aa61ee8ca4f5e778d20c61f24"
-    BOT_TOKEN = ""
-    MONGO_DB_URI = ""
+    BOT_TOKEN = "7686806902:AAGxlvsZGrOHCXPbS6qV3X_hJzr7VlrzwC8"
+    MONGO_DB_URI = "mongodb+srv://hanxsooyoung:qGsVMuuKjE12Gewz@cluster0.oooqdg5.mongodb.net/"
     OWNER_ID = [int(x) for x in os.getenv("OWNER_ID", "8226767954").split()] if os.getenv("OWNER_ID") else []
     LOG_GROUP = -1002456565415
     MAX_IMAGE_SIZE = 10 * 1024 * 1024
